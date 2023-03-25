@@ -2,11 +2,9 @@
 export default function Packs() {
   return (
     <div className="row justify-content-center">
-      <div className="col-10">
-        <h2 className="mb-4">PACKS</h2>
-      </div>
+     
       <div className="col-10 col-md-5 mb-3">
-        <h5>Surf and Yoga Package - 5 Days:</h5>
+        <h5 className="tit_1">Surf and Yoga Package - 5 Days:</h5>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">5 nights of accommodation in a private room with a private bathroom</li>
           <li className="list-group-item">5 surf and yoga classes suitable for all levels</li>
@@ -20,7 +18,7 @@ export default function Packs() {
       <div className="col-10 col-md-5 mb-3"></div>
       <div className="col-10 col-md-5 mb-3">
 
-        <h5>Surf and Yoga Package - 7 Days:</h5>
+        <h5 className="tit_1">Surf and Yoga Package - 7 Days:</h5>
 
         <ul className="list-group list-group-flush">
           <li className="list-group-item">7 nights of accommodation in a private room with a private bathroom</li>
@@ -36,7 +34,7 @@ export default function Packs() {
       <div className="col-10 col-md-5 mb-3"></div>
       <div className="col-10 col-md-5 mb-3">
 
-        <h5>Chill and Adventure Package - 5 Days.</h5>
+        <h5 className="tit_1">Chill and Adventure Package - 5 Days.</h5>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">5 nights in a private room.</li>
           <li className="list-group-item">Breakfast every day.</li>
@@ -48,7 +46,7 @@ export default function Packs() {
       <div className="col-10 col-md-5 mb-3"></div>
       <div className="col-10 col-md-5 mb-3"></div>
       <div className="col-10 col-md-5 mb-3">
-        <h5>Chill and Adventure Package - 7 Days.</h5>
+        <h5 className="tit_1">Chill and Adventure Package - 7 Days.</h5>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">7 nights in a private room.</li>
           <li className="list-group-item">Breakfast every day.</li>

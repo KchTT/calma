@@ -25,20 +25,26 @@ const Header = () => {
         <div className="collapse navbar-collapse justify-content-end me-4" id="menuPrincipal">
             <ul className="navbar-nav mb-2 mb-lg-0">
                 <li className="nav-item" >
-                    <Link className="nav-link menu_option" href="/">HOME</Link>
+                    <Link className="nav-link menu_option" href="/">
+                    <span data-bs-target="#menuPrincipal" data-bs-toggle="collapse">HOME</span></Link>
                 </li>
                 <li className="nav-item" >
-                    <Link className="nav-link menu_option" href="/acomodation">ACOMODATION</Link>
+                    <Link className="nav-link menu_option" href="/acomodation">
+                        <span data-bs-target="#menuPrincipal" data-bs-toggle="collapse">ACOMODATION</span>
+                    </Link>
                 </li>
                 <li className="nav-item" >
-                    <Link className="nav-link menu_option" href="/surf_yoga">SURF & YOGA</Link>
+                    <Link className="nav-link menu_option" href="/surf_yoga">
+                    <span data-bs-target="#menuPrincipal" data-bs-toggle="collapse">SURF & YOGA</span></Link>
                 </li>
                 <li className="nav-item" >
-                    <Link className="nav-link menu_option" href="/packs">PACKS & BOOK</Link>
+                    <Link className="nav-link menu_option" href="/packs">
+                    <span data-bs-target="#menuPrincipal" data-bs-toggle="collapse">PACKS & BOOK</span></Link>
                 </li>
             
                 <li className="nav-item" >
-                    <Link className="nav-link menu_option" href="/experience">EXPERIENCE</Link>
+                    <Link className="nav-link menu_option" href="/experience">
+                    <span data-bs-target="#menuPrincipal" data-bs-toggle="collapse">EXPERIENCE</span></Link>
                 </li>
             </ul>
             

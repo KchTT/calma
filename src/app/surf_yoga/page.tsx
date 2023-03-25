@@ -2,9 +2,7 @@
 export default function SurfAndYoga() {
   return (
     <div className="row justify-content-center">
-      <div className="col-10">
-        <h2 className="mb-4">SURF & YOGA</h2>
-      </div>
+      
       <div className="col-10 col-md-5 mb-3">
 
       </div>
