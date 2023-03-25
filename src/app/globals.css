@@ -9,6 +9,7 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --naranja:#ff8f55;
+  --color-texto:#333;
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -47,6 +48,7 @@
 .texto{
   line-height: 40px;
   font-family: var(--primary-font);
+  color:var(--color-texto)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -93,10 +95,11 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: var(--primary-font);
+
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--color-texto);
   /*background: linear-gradient(
       to bottom,
       transparent,
