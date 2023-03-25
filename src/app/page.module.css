@@ -143,11 +143,9 @@
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
+  background: linear-gradient(to bottom right,
+      rgba(var(--tile-start-rgb), 1),
+      rgba(var(--tile-end-rgb), 1));
   background-clip: content-box;
 }
 
@@ -226,11 +224,9 @@
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
+    background: linear-gradient(to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5));
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
@@ -250,6 +246,25 @@
   }
 }
 
+@media (max-width: 770px) {
+  .main {
+    padding: 1rem;
+  }
+}
+
+@media (orientation: landscape) {
+	.vertical {
+		display: none !important
+	}
+}
+
+@media (orientation: portrait) {
+	.horizontal {
+		display: none !important
+	}
+}
+
+
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
@@ -265,6 +280,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }

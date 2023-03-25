@@ -1,6 +1,6 @@
 const Footer = () => {
-    return <footer style={{ minHeight: "300px" }} className="back_verde">
-        <h3>FOOTER</h3>
+    return <footer className="footer">
+        <h3></h3>
     </footer>
 
 }
