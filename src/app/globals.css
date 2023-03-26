@@ -99,6 +99,50 @@ a {
   text-decoration: none;
 }
 
+.slide_y{
+  opacity: 0;
+  transition: all ease-out 1s;
+  top:50px;
+  transform: translateY(30px)
+}
+
+.slidex_l{
+  opacity: 0;
+  transition: all ease-out 0.5s;
+  top:50px;
+  transform: translateX(-30px)
+}
+
+.slidex_r{
+  opacity: 0;
+  transition: all ease-out 0.5s;
+  top:50px;
+  transform: translateX(30px)
+}
+
+.delay{
+  transition-delay: 500ms;
+}
+
+.slide_in{
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+.slide_in_x{
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+.slide_time [data-time] {
+  transition: all ease-out attr(data-time);
+}
+
+.test [data-texto]::before {
+  content: attr(data-texto);
+  margin-right: 5px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

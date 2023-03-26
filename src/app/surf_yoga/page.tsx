@@ -1,13 +1,22 @@
 
+
+"use client"
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
+import { useRef } from "react";
+
 export default function SurfAndYoga() {
+  const ref_1:any = useRef();
+  const ref_2:any = useRef()
+  const onScreen_1 = useIntersectionObserver(ref_1, { threshold: 0.5 });
+  const onScreen_2 = useIntersectionObserver(ref_2, { threshold: 0.5 });
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center pt-5">
       
       <div className="col-10 col-md-5 mb-3">
 
       </div>
 
-      <div className="col-10 col-md-5 mb-3">
+      <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_1 ? ' slide_in_x' : ''}`} ref={ref_1}>
         <p className="texto">        
         At Calma Sunset and Surf, the adventure never ends! In addition to surfing and yoga, we offer a variety of exciting activities to enjoy during your stay in Manzanillo.
         </p>
@@ -19,7 +28,7 @@ export default function SurfAndYoga() {
         </p>
       </div>
 
-      <div className="col-10 col-md-5 mb-3">
+      <div className={`col-10 col-md-5 mb-3 slidex_l  ${onScreen_2 ? ' slide_in_x' : ''}`} ref={ref_2}>
         <p className="texto">        
         Of course, you can&apos;t miss the magical sunsets that Manzanillo has to offer. Relax on the beach and enjoy the natural beauty as the sun sets on the horizon.
         </p>

@@ -1,9 +1,21 @@
+"use client"
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
+import { useRef } from "react";
 
 export default function Packs() {
+  const ref_1:any = useRef();
+  const onScreen_1 = useIntersectionObserver(ref_1, { threshold: 0.5 });
+  const ref_2:any = useRef();
+  const onScreen_2 = useIntersectionObserver(ref_2, { threshold: 0.5 });
+  const ref_3:any = useRef();
+  const onScreen_3 = useIntersectionObserver(ref_3, { threshold: 0.5 });
+  const ref_4:any = useRef();
+  const onScreen_4 = useIntersectionObserver(ref_4, { threshold: 0.5 });
+
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center pt-5">
      
-      <div className="col-10 col-md-5 mb-3">
+     <div className={`col-10 col-md-5 mb-3 slidex_l  ${onScreen_1 ? ' slide_in_x' : ''}`} ref={ref_1}>
         <h5 className="tit_1">Surf and Yoga Package - 5 Days:</h5>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">5 nights of accommodation in a private room with a private bathroom</li>
@@ -16,7 +28,7 @@ export default function Packs() {
       </div>
       <div className="col-10 col-md-5 mb-3"></div>
       <div className="col-10 col-md-5 mb-3"></div>
-      <div className="col-10 col-md-5 mb-3">
+      <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_2 ? ' slide_in_x' : ''}`} ref={ref_2}>
 
         <h5 className="tit_1">Surf and Yoga Package - 7 Days:</h5>
 
@@ -32,9 +44,9 @@ export default function Packs() {
       </div>
       <div className="col-10 col-md-5 mb-3"></div>
       <div className="col-10 col-md-5 mb-3"></div>
-      <div className="col-10 col-md-5 mb-3">
+      <div className={`col-10 col-md-5 mb-3 slidex_l  ${onScreen_3 ? ' slide_in_x' : ''}`} ref={ref_3}>
 
-        <h5 className="tit_1">Chill and Adventure Package - 5 Days.</h5>
+        <h5 className="tit_1" ref={ref_2}>Chill and Adventure Package - 5 Days.</h5>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">5 nights in a private room.</li>
           <li className="list-group-item">Breakfast every day.</li>
@@ -45,7 +57,7 @@ export default function Packs() {
       </div>
       <div className="col-10 col-md-5 mb-3"></div>
       <div className="col-10 col-md-5 mb-3"></div>
-      <div className="col-10 col-md-5 mb-3">
+      <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_4 ? ' slide_in_x' : ''}`} ref={ref_4}>
         <h5 className="tit_1">Chill and Adventure Package - 7 Days.</h5>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">7 nights in a private room.</li>
