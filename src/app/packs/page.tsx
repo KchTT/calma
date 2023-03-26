@@ -17,7 +17,7 @@ export default function Packs() {
      
      <div className={`col-10 col-md-5 mb-3 slidex_l  ${onScreen_1 ? ' slide_in_x' : ''}`} ref={ref_1}>
         <h5 className="tit_1">Surf and Yoga Package - 5 Days:</h5>
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush mt-3 mb-3">
           <li className="list-group-item">5 nights of accommodation in a private room with a private bathroom</li>
           <li className="list-group-item">5 surf and yoga classes suitable for all levels</li>
           <li className="list-group-item">Daily breakfast included</li>
@@ -32,7 +32,7 @@ export default function Packs() {
 
         <h5 className="tit_1">Surf and Yoga Package - 7 Days:</h5>
 
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush mt-3 mb-3">
           <li className="list-group-item">7 nights of accommodation in a private room with a private bathroom</li>
           <li className="list-group-item">6 surf and yoga classes suitable for all levels</li>
           <li className="list-group-item">Daily breakfast included</li>
@@ -47,7 +47,7 @@ export default function Packs() {
       <div className={`col-10 col-md-5 mb-3 slidex_l  ${onScreen_3 ? ' slide_in_x' : ''}`} ref={ref_3}>
 
         <h5 className="tit_1" ref={ref_2}>Chill and Adventure Package - 5 Days.</h5>
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush mt-3 mb-3">
           <li className="list-group-item">5 nights in a private room.</li>
           <li className="list-group-item">Breakfast every day.</li>
           <li className="list-group-item">1 Zip Line/Canopy Tour.</li>
@@ -59,7 +59,7 @@ export default function Packs() {
       <div className="col-10 col-md-5 mb-3"></div>
       <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_4 ? ' slide_in_x' : ''}`} ref={ref_4}>
         <h5 className="tit_1">Chill and Adventure Package - 7 Days.</h5>
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush  mt-3 mb-3">
           <li className="list-group-item">7 nights in a private room.</li>
           <li className="list-group-item">Breakfast every day.</li>
           <li className="list-group-item">1 Zip Line/Canopy Tour.</li>
