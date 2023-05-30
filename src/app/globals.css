@@ -70,8 +70,8 @@
 
 .back_naranja{
   background-color: var(--naranja) !important;
-  color: #fff;
-  border:0px
+  color: #fff  !important;
+  border:0px !important;
 }
 
 .texto{
