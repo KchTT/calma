@@ -1,7 +1,8 @@
 "use client"
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { useRef } from "react";
-
+import Galeria
+ from "@/components/galeria";
 export default function Packs() {
   const ref_1:any = useRef();
   const onScreen_1 = useIntersectionObserver(ref_1, { threshold: 0.5 });
@@ -26,8 +27,8 @@ export default function Packs() {
         </p>
 
       </div>
-      <div className="col-10 col-md-5 mb-3"></div>
-      <div className="col-10 col-md-5 mb-3"></div>
+      <div className="col-10 col-md-5 mb-3"><Galeria id_gal="1" imgs={['7.jpg','13.jpg']} /></div>
+      <div className="col-10 col-md-5 mb-3"><Galeria id_gal="2" imgs={['5.jpg','11.jpg','12.jpg']} /></div>
       <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_2 ? ' slide_in_x' : ''}`} ref={ref_2}>
 
         <h5 className="tit_1">Surf and Yoga Package - 7 Days:</h5>
@@ -42,8 +43,7 @@ export default function Packs() {
         </p>
 
       </div>
-      <div className="col-10 col-md-5 mb-3"></div>
-      <div className="col-10 col-md-5 mb-3"></div>
+    
       <div className={`col-10 col-md-5 mb-3 slidex_l  ${onScreen_3 ? ' slide_in_x' : ''}`} ref={ref_3}>
 
         <h5 className="tit_1" ref={ref_2}>Chill and Adventure Package - 5 Days.</h5>
@@ -55,8 +55,8 @@ export default function Packs() {
           <li className="list-group-item">1 60-minute Massage Session with Ocean View.</li>
           <li className="list-group-item">4 Yoga Classes.</li></ul>
       </div>
-      <div className="col-10 col-md-5 mb-3"></div>
-      <div className="col-10 col-md-5 mb-3"></div>
+      <div className="col-10 col-md-5 mb-3"><Galeria id_gal="3" imgs={['3.jpg']} /></div>
+      <div className="col-10 col-md-5 mb-3"><Galeria id_gal="4" imgs={['10.jpg']} /></div>
       <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_4 ? ' slide_in_x' : ''}`} ref={ref_4}>
         <h5 className="tit_1">Chill and Adventure Package - 7 Days.</h5>
         <ul className="list-group list-group-flush  mt-3 mb-3">

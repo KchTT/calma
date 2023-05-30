@@ -1,8 +1,8 @@
 const Galeria = (props:any) => {
-    return <div id="galeria_a" className="carousel slide" data-bs-ride="carousel">
+    return <div id={"galeria_"+props.id_gal} className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
             {props.imgs.map((item:any, index:any) => {
-                return <button key={index} type="button" data-bs-target="#galeria_a" data-bs-slide-to={index} className={`${index == 0 ? "active" : ""}`}
+                return <button key={index} type="button" data-bs-target={"#galeria_"+props.id_gal} data-bs-slide-to={index} className={`${index == 0 ? "active" : ""}`}
                     aria-current="true" aria-label={"Slide " + (index + 1)}></button>
             })}
         </div>
@@ -16,12 +16,12 @@ const Galeria = (props:any) => {
             })}
         </div>
 
-        <button className="carousel-control-prev" type="button" data-bs-target="#galeria_a"
+        <button className="carousel-control-prev" type="button" data-bs-target={"#galeria_"+props.id_gal}
             data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#galeria_a"
+        <button className="carousel-control-next" type="button" data-bs-target={"#galeria_"+props.id_gal}
             data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>

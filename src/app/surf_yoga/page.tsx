@@ -3,6 +3,7 @@
 "use client"
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { useRef } from "react";
+import Galeria from "@/components/galeria";
 
 export default function SurfAndYoga() {
   const ref_1:any = useRef();
@@ -13,7 +14,7 @@ export default function SurfAndYoga() {
     <div className="row justify-content-center pt-5">
       
       <div className="col-10 col-md-5 mb-3">
-
+        <Galeria id_gal="1" imgs={['6.jpg','8.jpg']} />
       </div>
 
       <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_1 ? ' slide_in_x' : ''}`} ref={ref_1}>
@@ -41,7 +42,7 @@ export default function SurfAndYoga() {
       </div>
 
       <div className="col-10 col-md-5 mb-3">
-
+      <Galeria id_gal="2" imgs={['14.jpg','9.jpg']} />
       </div>
 
 

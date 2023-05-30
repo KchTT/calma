@@ -42,10 +42,6 @@ const Header = () => {
                     <span data-bs-target="#menuPrincipal" data-bs-toggle="collapse">PACKS & BOOK</span></Link>
                 </li>
             
-                <li className="nav-item" >
-                    <Link className="nav-link menu_option" href="/experience">
-                    <span data-bs-target="#menuPrincipal" data-bs-toggle="collapse">EXPERIENCE</span></Link>
-                </li>
             </ul>
             
         </div>

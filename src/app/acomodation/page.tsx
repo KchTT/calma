@@ -2,6 +2,7 @@
 "use client"
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { useRef } from "react";
+import Galeria from "@/components/galeria";
 
 export default function Acomodation() {
   const ref_1: any = useRef();
@@ -23,12 +24,12 @@ export default function Acomodation() {
             Casa Jungla is a two-bedroom house located in the midst of lush jungle. It features two bathrooms, one of them en suite, and an outdoor bathtub with breathtaking views of the natural surroundings. The kitchen is spacious and fully equipped for you to prepare your favorite meals. Each bedroom has air conditioning and hot water for your comfort.
           </p>
         </div>
-        <div className="col-10 col-md-5 mb-3">[Casa Jungla Logo]</div>
+        <div className="col-10 col-md-5 mb-3"><Galeria id_gal="1" imgs={['1.jpg']} /></div>
 
       </div>
       <div className="row justify-content-center mb-5">
 
-        <div className="col-10 col-md-5 mb-3">[Casa Bamboo Logo]</div>
+        <div className="col-10 col-md-5 mb-3"><Galeria id_gal="2" imgs={['11.jpg']} /></div>
         <div className={`col-10 col-md-5 mb-3 slidex_r  ${onScreen_2 ? ' slide_in_x' : ''}`} ref={ref_2}>
           <h4 className="tit_1">Casa Bamboo</h4>
           <p className="texto">
@@ -41,7 +42,7 @@ export default function Acomodation() {
           <p className="texto">
             Casa Bella Vista is a stunning two-bedroom house with ocean views. Each bedroom has its own bathroom with hot water, and the master bedroom is particularly spacious with panoramic views of the entire northern peninsula. The outdoor gallery and living room are ideal for relaxing while enjoying the view. This house also has air conditioning for your comfort, and a Jacuzzi with ocean view.
           </p></div>
-        <div className="col-10 col-md-5 mb-3">[Casa Bella Vista Logo]</div>
+        <div className="col-10 col-md-5 mb-3"><Galeria id_gal="3" imgs={['10.jpg']} /></div>
       </div><div className="row justify-content-center mb-5">
 
         <div className={`col-10 slide_y  ${onScreen_4 ? ' slide_in' : ''}`} ref={ref_4}>
